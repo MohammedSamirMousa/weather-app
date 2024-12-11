@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg py-4" id="nav">
+        <div class="container py-3">
+            <a class="navbar-brand" href="index.html">
+                <div class="row align-items-center">
+                    <div class="col-5">
+                        <img src="./img/logo.png" class=" d-block" alt="logo">
+                    </div>
+                    <div class="col-7">
+                        <div>
+                            <h1 class="fs-5  text-white">Weather</h1>
+                            <p class=" m-0 color">tagline goes here</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <button class="navbar-toggler border-0 rounded-pill color-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon d-flex justify-content-center align-items-center">
+                    <i class="fa-solid fa-bars text-white"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                <ul class="navbar-nav d-flex justify-content-center align-items-center gap-1">
+                    <li class="nav-item mx-3">
+                        <a class="text-decoration-none rounded-pill active fs-6 home" aria-current="page"
+                            href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="text-decoration-none rounded-pill fs-6" href="#">Features</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="text-decoration-none rounded-pill fs-6" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="text-decoration-none rounded-pill fs-6" href="/contact.html">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero py-5">
+        <div class="container-fluid p-5">
+            <form class="container py-5 position-relative" id="formHero">
+                <div class="input-group mb-3 py-5">
+                    <input type="search"
+                        class="form-control bg border-0 p-3 rounded-pill text-white shadow-none border-0 z-1"
+                        placeholder="Find your locatiob" id="inputSearch">
+                    <button class="btn btn-info rounded-pill position-absolute end-0 me-2 z-3 px-4 text-white"
+                        type="submit" id="btnSearch">Find</button>
+                </div>
+                <p class="text-danger fs-5 p-0 m-0" id="error"></p>
+            </form>
+        </div>
+    </section>
+
+    <section class="weather py-5" id="weather">
+        <div class="container">
+            <div class="card-subtitle row p-3" id="weatherContainer">
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <form class="position-relative" id="formFooter">
+                        <div class="input-group mb-3">
+                            <input type="email"
+                                class="form-control bg border-0 p-3 rounded-pill text-white shadow-none border-0 z-1"
+                                placeholder="Enter Your Email To Subscribe..." id="email">
+                            <button class="btn btn-info rounded-pill position-absolute end-0 me-2 z-3 px-4 text-white"
+                                type="submit" id="btnFoot">Subscribe</button>
+                        </div>
+                        <p class="text-danger d-none" id="errorMassage">Invalid email</p>
+                    </form>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <ul class="list-unstyled d-flex">
+                        <li class="mx-2"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li class="mx-2"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li class="mx-2"><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                        <li class="mx-2"><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="color">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

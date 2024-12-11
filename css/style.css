@@ -1,0 +1,150 @@
+:root {
+  --main-color: #bfc1c8;
+  --main-bg: #1e202b;
+  --second-color: #bfc1c8;
+  --border-color: #009ad8;
+}
+
+.color-2 {
+  color: var(--border-color);
+}
+
+.color {
+  color: var(--second-color);
+}
+
+.col-7 p {
+  color: var(--second-color);
+  font-size: 0.7rem;
+}
+
+a {
+  color: #fff;
+}
+
+body {
+  background-color: var(--main-bg);
+}
+
+.hero {
+  background-image: url(../img/banner.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nav-item a {
+  width: 100px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
+}
+
+#nav .active {
+  border: 1px solid var(--border-color);
+  color: var(--border-color);
+}
+
+#nav .nav-item a:hover {
+  border: 1px solid var(--border-color);
+  color: var(--border-color);
+}
+
+.bg {
+  background-color: #1e202b !important;
+}
+
+.bg-2 {
+  background-color: #262936 !important;
+}
+
+#formHero button,
+#formFooter button {
+  transform: translateY(20%);
+  -webkit-transform: translateY(20%);
+  -moz-transform: translateY(20%);
+  -ms-transform: translateY(20%);
+  -o-transform: translateY(20%);
+}
+
+#formHero ::placeholder,
+#formFooter ::placeholder,
+#contactForm ::placeholder {
+  color: gray;
+}
+
+#weather .card {
+  background-color: #262936 !important;
+}
+
+#weather .card-header {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#weather {
+  transform: translateY(-20%);
+  -webkit-transform: translateY(-20%);
+  -moz-transform: translateY(-20%);
+  -ms-transform: translateY(-20%);
+  -o-transform: translateY(-20%);
+}
+
+#footer {
+  background-color: #323544;
+}
+
+#footer a {
+  background-color: #1e202b;
+  color: var(--border-color);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+#footer a:hover {
+  background-color: var(--border-color);
+  color: #fff;
+}
+
+iframe {
+  height: 300px;
+}
+
+#contactForm input,
+#contactForm textarea {
+  border: 2px solid #262936;
+  color: #fff !important;
+}
+
+#contactForm input:hover,
+#contactForm input:focus,
+#contactForm textarea:hover,
+#contactForm textarea:focus {
+  border-color: var(--border-color);
+}
+
+#contactForm textarea {
+  border-radius: 25px 25px 25px 25px;
+  -webkit-border-radius: 25px 25px 25px 25px;
+  -moz-border-radius: 25px 25px 25px 25px;
+  -ms-border-radius: 25px 25px 25px 25px;
+  -o-border-radius: 25px 25px 25px 25px;
+}

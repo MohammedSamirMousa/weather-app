@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg py-4" id="nav">
+        <div class="container py-3">
+            <a class="navbar-brand" href="index.html">
+                <div class="row align-items-center">
+                    <div class="col-5">
+                        <img src="./img/logo.png" class=" d-block" alt="logo">
+                    </div>
+                    <div class="col-7">
+                        <div>
+                            <h1 class="fs-5  text-white">Weather</h1>
+                            <p class=" m-0 color">tagline goes here</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <button class="navbar-toggler border-0 rounded-pill color-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon d-flex justify-content-center align-items-center">
+                    <i class="fa-solid fa-bars text-white"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                <ul class="navbar-nav d-flex justify-content-center align-items-center gap-1">
+                    <li class="nav-item mx-3">
+                        <a class="text-decoration-none rounded-pill  fs-6 home" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="text-decoration-none rounded-pill fs-6" href="#">Features</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="text-decoration-none rounded-pill fs-6" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="text-decoration-none rounded-pill active fs-6" aria-current="page"
+                            href="/contact.html">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5">
+        <div class="container">
+            <nav class="bg-2 p-2 rounded-pill"
+                style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                aria-label="breadcrumb">
+                <ol class="breadcrumb ms-2 m-0">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none color">Home</a></li>
+                    <li class="breadcrumb-item color" aria-current="page">Contact</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <section class="contant-us py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="map bg-2 rounded">
+                        <div class="header">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105796.96539525698!2d-118.23091450522226!3d34.03989056787008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b9793010985f%3A0xd51200f29f08ba96!2sReynier%20Park!5e0!3m2!1sar!2seg!4v1733925848467!5m2!1sar!2seg"
+                                allowfullscreen="" loading="lazy" class="w-100"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="body p-2">
+                            <address>
+                                <p class="color fw-light">
+                                    <i class="fa-solid fa-location-dot color-2"></i> Company Name INC.2803 Avenue
+                                    Street, Los Angeles
+                                </p>
+                            </address>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="color text-decoration-none">
+                                    <i class="fa-solid fa-phone color-2"></i>
+                                    +1 800 314 235
+                                </a>
+                                <a href="#" class="color text-decoration-none">
+                                    <i class="fa-solid fa-mail-forward color-2"></i>
+                                    contact@companyname.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offset-lg-2 col-lg-6">
+                    <div class="header text-white">
+                        <h3>Contact us</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque aliquam nemo laudantium
+                            maxime accusamus nesciunt inventore id illum saepe, molestias aspernatur unde asperiores,
+                            modi doloremque sequi dolorem voluptate ut dolore!</p>
+                        <form id="contactForm">
+                            <div class="row gy-2">
+                                <div class="col-6">
+                                    <input type="text" class="form-control shadow-none rounded-pill bg-transparent"
+                                        placeholder="Your Name..." id="userName" name="user_name">
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" class="form-control shadow-none rounded-pill bg-transparent"
+                                        placeholder="Email Address..." id="emailUser" name="email_user">
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" class="form-control shadow-none rounded-pill bg-transparent"
+                                        placeholder="Company Name..." id="company" name="Company">
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" class="form-control shadow-none rounded-pill bg-transparent"
+                                        placeholder="Website..." id="website" name="webSite">
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control shadow-none bg-transparent" placeholder="Massage..."
+                                        rows="4" cols="4" id="text"></textarea>
+                                </div>
+                                <div class="col-2 offset-lg-10">
+                                    <button class="btn btn-info d-block text-white" type="submit"
+                                        id="btnContact">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="py-5" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <form class="position-relative" id="formFooter">
+                        <div class="input-group mb-3">
+                            <input type="email"
+                                class="form-control bg border-0 p-3 rounded-pill text-white shadow-none border-0 z-1"
+                                placeholder="Enter Your Email To Subscribe..." id="emailContact">
+                            <button class="btn btn-info rounded-pill position-absolute end-0 me-2 z-3 px-4 text-white"
+                                type="submit" id="btnFoot">Subscribe</button>
+                        </div>
+                        <p class="text-danger d-none" id="errorMassage">Invalid email</p>
+                    </form>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <ul class="list-unstyled d-flex">
+                        <li class="mx-1"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li class="mx-1"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li class="mx-1"><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                        <li class="mx-1"><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="color">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/valid.js"></script>
+</body>
+
+</html>
