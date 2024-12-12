@@ -9,7 +9,7 @@ let errorMassage = document.getElementById("errorMassage");
 
 // To make a loading screen when reload
 window.addEventListener("load", () => {
-  setTimeout( () => {
+  setTimeout(() => {
     let load = document.getElementById("loader");
     load.classList.add("fade-out");
   }, 700);

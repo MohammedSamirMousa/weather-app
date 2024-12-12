@@ -10,6 +10,18 @@ let allInputs = document.querySelectorAll("input , textarea");
 let emailContact = document.getElementById("emailContact");
 let btnFoot = document.getElementById("btnFoot");
 
+// To make a loading screen when reload
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    let load = document.getElementById("loader");
+    load.classList.add("fade-out");
+  }, 700);
+  setTimeout(function timeOut() {
+    let load = document.getElementById("loader");
+    load.classList.add("d-none");
+  }, 1500);
+});
+
 // Initialize data list from localStorage or as an empty array
 let dataList = [];
 
