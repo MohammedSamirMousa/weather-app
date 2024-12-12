@@ -7,6 +7,18 @@ let btnFoot = document.getElementById("btnFoot");
 let email = document.getElementById("email");
 let errorMassage = document.getElementById("errorMassage");
 
+// To make a loading screen when reload
+window.addEventListener("load", () => {
+  setTimeout( () => {
+    let load = document.getElementById("loader");
+    load.classList.add("fade-out");
+  }, 700);
+  setTimeout(function timeOut() {
+    let load = document.getElementById("loader");
+    load.classList.add("d-none");
+  }, 1500);
+});
+
 // Initialize user data array and populate it from localStorage if data exists
 let userData = [];
 if (localStorage.getItem("data")) {

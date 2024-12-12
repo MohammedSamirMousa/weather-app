@@ -148,3 +148,27 @@ iframe {
   -ms-border-radius: 25px 25px 25px 25px;
   -o-border-radius: 25px 25px 25px 25px;
 }
+
+.load-sec {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 300;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+
+.load-sec.fade-out {
+  opacity: 0;
+}
