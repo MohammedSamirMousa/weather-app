@@ -7,9 +7,9 @@ let btnFoot = document.getElementById("btnFoot");
 let email = document.getElementById("email");
 let errorMassage = document.getElementById("errorMassage");
 
-// To make a loading screen when reload
+// To make a loading screen when realod
 window.addEventListener("load", () => {
-  setTimeout(() => {
+  setTimeout( () => {
     let load = document.getElementById("loader");
     load.classList.add("fade-out");
   }, 700);

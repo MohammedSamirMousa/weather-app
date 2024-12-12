@@ -12,14 +12,14 @@ let btnFoot = document.getElementById("btnFoot");
 
 // To make a loading screen when reload
 window.addEventListener("load", () => {
-  setTimeout(() => {
-    let load = document.getElementById("loader");
+  setTimeout( () => {
+    let load = document.getElementById("loaders");
     load.classList.add("fade-out");
-  }, 700);
+  }, 300);
   setTimeout(function timeOut() {
-    let load = document.getElementById("loader");
+    let load = document.getElementById("loaders");
     load.classList.add("d-none");
-  }, 1500);
+  }, 1000);
 });
 
 // Initialize data list from localStorage or as an empty array
